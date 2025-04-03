@@ -1,0 +1,9 @@
+.primaryBtn {
+  background: var(--primaryClr);
+  padding: 8px 12px;
+  font-size: var(--bodyText);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.5px;
+}
