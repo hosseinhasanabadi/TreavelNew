@@ -1,0 +1,19 @@
+.primaryBtn {
+    background: var(--primaryClr);
+    padding: 8px 12px;
+    font-size: var(--bodyText);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: 500;
+
+
+  }
+.primaryBtn:hover{
+    transform: translateY(-3px);
+
+  }

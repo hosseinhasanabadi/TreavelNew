@@ -1,8 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './page/Home'
 import { useRoutes } from 'react-router'
 import routes from './routes'
 import Header from './components/Header/Header'

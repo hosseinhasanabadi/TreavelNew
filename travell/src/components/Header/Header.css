@@ -1,9 +1,67 @@
-.primaryBtn {
-  background: var(--primaryClr);
-  padding: 8px 12px;
-  font-size: var(--bodyText);
+.is-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: smoThScaroll 1s forwards;
+  background: var(--white);
+  z-index: 999;
+}
+@keyframes smoThScaroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.is-sticky .navbar .navbar-brand a,
+.is-sticky .navbar .offcanvas-body a {
+  color: var(--black) !important;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  padding: 12px 0px;
+  width: 100%;
+}
+header .navbar .navbar-brand a {
+  font-size: 22px;
   color: var(--white);
-  text-align: center;
-  position: relative;
-  letter-spacing: 0.5px;
+  line-height: 150%;
+  font-family: var(--fontFamily1);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+header .navbar .offcanvas-body a {
+  font-size: var(--bodyText);
+  color: var(--white) !important;
+  line-height: 150%;
+  font-family: var(--fontFamily);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header .navbar .offcanvas-body a:hover {
+  color: var(--primaryClr) !important;
+}
+header .navbar .offcanvas-body .dropdown-menu {
+  min-width: 12rem;
+}
+header .navbar .offcanvas-body .dropdown-item {
+  color: var(--black) !important;
+}
+@media only screen and (max-width: 991px) {
+  header .navbar .toggle-btn {
+    font-size: var(--bodyText);
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 7px 10px;
+  }
+  .is-sticky .navbar  .toggle-btn {
+    color: var(--black) ;
+    border: 2px solid var(--primaryClr);
+  }
 }

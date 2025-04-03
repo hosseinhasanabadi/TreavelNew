@@ -8,7 +8,7 @@ import {
   Nav,
   NavDropdown,
 } from "react-bootstrap";
-import '../Header/Header.css'
+import "../Header/header.css";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -22,20 +22,20 @@ function Header() {
     };
   }, []);
   const isSticky = (e) => {
-    const header = document.querySelector('.header-section');
+    const header = document.querySelector(".header-section");
     if (!header) return; // جلوگیری از ارور در صورتی که المان پیدا نشود
-  
+
     const scrollTop = window.scrollY;
-    scrollTop >= 120 
-      ? header.classList.add('is-sticky') 
-      : header.classList.remove('is-sticky');
+    scrollTop >= 120
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
   };
-    
+
   return (
-    <section className="header-section">
+    <header className="header-section">
       <Container>
         <Row>
-          <Navbar expand="lg" className="mb-3">
+          <Navbar expand="lg" className="p-0">
             {/* {Logo section} */}
             <Navbar.Brand>
               <NavLink to="/">Weekendmonks</NavLink>
@@ -92,7 +92,7 @@ function Header() {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
             <div className="ms-md-4 ms-2">
-              <NavLink className="primaryBtn d-nond-sm-inline-block">
+              <NavLink className="primaryBtn d-none d-sm-inline-block">
                 Book Now
               </NavLink>
               <li
@@ -108,7 +108,7 @@ function Header() {
           </Navbar>
         </Row>
       </Container>
-    </section>
+    </header>
   );
 }
 
